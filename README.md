@@ -52,20 +52,23 @@ Here is visual documentation of the API behaving identically to our integration 
 
 ### 1. Authentication Configuration
 After entering credentials into the `/api/auth/register` and `/api/auth/login` layers, an active JSON Web Token successfully bootstraps the current session:
-![Auth Testing](/Users/harshsingh/.gemini/antigravity/brain/tempmediaStorage/media__1775041572609.png)
-*This demonstrates that the application accurately mints, signs, and unpacks the internal authorization structure.*
+![Auth Testing](<img width="1440" height="752" alt="Screenshot 2026-04-01 at 4 33 54 PM" src="https://github.com/user-attachments/assets/3b0055e0-4c2c-4d60-851c-d17d7250d893" />
+)
+
 
 ### 2. Creating a Financial Record (ADMIN)
 An `ADMIN` role can cleanly populate the raw ledger. An `INCOME` payload is drafted and correctly fires the `POST /api/records` route, logging exactly as modelled in Prisma:
-![Record Creation Screenshot](screenshot_2.png) 
-*(Note: Please insert the correct path for your second screenshot here)*
+![Record Creation Screenshot](<img width="1440" height="781" alt="Screenshot 2026-04-01 at 4 34 04 PM" src="https://github.com/user-attachments/assets/a541b2e3-a7de-420c-bc62-703e15f03aa8" />
+) 
+
 
 ### 3. Fetching Aggregated Dashboards
 Any authorized role calling `GET /api/dashboard/summary` triggers our Prisma aggregators. The system totals the income and breaks out nested maps flawlessly:
-![Dashboard Summary Screenshot](screenshot_3.png)
-*(Note: Please insert the correct path for your third screenshot here)*
+![Dashboard Summary Screenshot](<img width="1440" height="760" alt="Screenshot 2026-04-01 at 4 34 34 PM" src="https://github.com/user-attachments/assets/10dad361-226d-4df1-99f1-0adecbbe44b5" />
+)
+
 
 ### 4. RBAC Protection (VIEWER Guard)
 When generating a `VIEWER` access token, a deliberate structural protection rejects mutative queries. The `POST /api/records` route traps the request returning a strict `403` status:
-![RBAC Rejection Screenshot](screenshot_4.png)
-*(Note: Please insert the correct path for your fourth screenshot here)*
+![RBAC Rejection Screenshot](<img width="1440" height="766" alt="Screenshot 2026-04-01 at 4 34 52 PM" src="https://github.com/user-attachments/assets/4c6dbc19-b884-4e65-814c-2e8cbb0abdd3" />
+)
