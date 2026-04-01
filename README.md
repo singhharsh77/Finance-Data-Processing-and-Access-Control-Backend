@@ -52,8 +52,8 @@ Here is visual documentation of the API behaving identically to our integration 
 
 ### 1. Authentication Configuration
 After entering credentials into the `/api/auth/register` and `/api/auth/login` layers, an active JSON Web Token successfully bootstraps the current session:
-![Auth Testing](<img width="1440" height="752" alt="Screenshot 2026-04-01 at 4 33 54 PM" src="https://github.com/user-attachments/assets/3b0055e0-4c2c-4d60-851c-d17d7250d893" />
-)
+<img width="1440" height="752" alt="Screenshot 2026-04-01 at 4 33 54 PM" src="https://github.com/user-attachments/assets/3b0055e0-4c2c-4d60-851c-d17d7250d893" />
+
 
 
 ### 2. Creating a Financial Record (ADMIN)
