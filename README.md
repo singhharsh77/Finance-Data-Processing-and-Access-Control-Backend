@@ -28,6 +28,14 @@ npm run dev
 ```
 *The server will start on port 3000.*
 
+## Live API Endpoint  
+<a href="https://finance-backend-api-gshn.onrender.com/" target="_blank">
+  https://finance-backend-api-gshn.onrender.com/
+</a>
+
+## For Testing Purpose  
+You can use: http://127.0.0.1:5500/sandbox.html
+
 ## Role & Permission Matrix
 
 | Endpoint | Role | Description |
