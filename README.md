@@ -58,17 +58,17 @@ After entering credentials into the `/api/auth/register` and `/api/auth/login` l
 
 ### 2. Creating a Financial Record (ADMIN)
 An `ADMIN` role can cleanly populate the raw ledger. An `INCOME` payload is drafted and correctly fires the `POST /api/records` route, logging exactly as modelled in Prisma:
-![Record Creation Screenshot](<img width="1440" height="781" alt="Screenshot 2026-04-01 at 4 34 04 PM" src="https://github.com/user-attachments/assets/a541b2e3-a7de-420c-bc62-703e15f03aa8" />
-) 
+<img width="1440" height="781" alt="Screenshot 2026-04-01 at 4 34 04 PM" src="https://github.com/user-attachments/assets/a541b2e3-a7de-420c-bc62-703e15f03aa8" />
+
 
 
 ### 3. Fetching Aggregated Dashboards
 Any authorized role calling `GET /api/dashboard/summary` triggers our Prisma aggregators. The system totals the income and breaks out nested maps flawlessly:
-![Dashboard Summary Screenshot](<img width="1440" height="760" alt="Screenshot 2026-04-01 at 4 34 34 PM" src="https://github.com/user-attachments/assets/10dad361-226d-4df1-99f1-0adecbbe44b5" />
-)
+<img width="1440" height="760" alt="Screenshot 2026-04-01 at 4 34 34 PM" src="https://github.com/user-attachments/assets/10dad361-226d-4df1-99f1-0adecbbe44b5" />
+
 
 
 ### 4. RBAC Protection (VIEWER Guard)
 When generating a `VIEWER` access token, a deliberate structural protection rejects mutative queries. The `POST /api/records` route traps the request returning a strict `403` status:
-![RBAC Rejection Screenshot](<img width="1440" height="766" alt="Screenshot 2026-04-01 at 4 34 52 PM" src="https://github.com/user-attachments/assets/4c6dbc19-b884-4e65-814c-2e8cbb0abdd3" />
-)
+<img width="1440" height="766" alt="Screenshot 2026-04-01 at 4 34 52 PM" src="https://github.com/user-attachments/assets/4c6dbc19-b884-4e65-814c-2e8cbb0abdd3" />
+
